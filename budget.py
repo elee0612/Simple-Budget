@@ -1,24 +1,25 @@
-"""
-Calculates and displays a budget amount.
-
-Attributes:
-    income (list): List of incomes.
-    expenses (list): List of expenses.
-"""
 class Budget:
     """
-    Initializes the budget to a value.
+    Calculates and displays a budget amount.
 
-    Parameters:
-    income (list): The initial budget amount.
+    Attributes:
+    income (list): List of incomes.
+    expenses (list): List of expenses.
     """
+    
     def __init__(self, income):
+        """
+        Initializes the budget to a value.
+
+        Parameters:
+        income (list): The initial budget amount.
+        """
         self.income = income
 
-    """
-    Displays the current budget amount.
-    """
     def showAmount(self):
+        """
+        Displays the current budget amount.
+        """
         print(f"Total Budget: ${self.income: .2f}")
 
     def addIncome(self, name, amount):
